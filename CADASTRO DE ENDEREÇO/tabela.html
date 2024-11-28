@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="styletabela.css">
+</head>
+<body>
+    <h1>Dados da Tabela</h1>
+    <table id="tabelaDados">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>País</th>
+                <th>Estado</th>
+                <th>Cidade</th>
+                <th>Bairro</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela">
+            <!-- Linhas de dados serão adicionadas aqui dinamicamente -->
+        </tbody>
+    </table>
+    <!-- Definição do modal -->
+    <div id="modalOpcoes" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Configurações de endereço <span id="enderecoId"></span>?</p>
+            <button id="btnExcluir">Excluir</button>
+            <button id="btnEditar">Editar</button>
+        </div>
+    </div>
+    <script src="scripttabela.js"></script>
+</body>
+</html>
