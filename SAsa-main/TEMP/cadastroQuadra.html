@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Espaço Esportivo</title>
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Cadastrar Espaço Esportivo</h1>
+  </header>
+  <main>
+    <section class="form-section">
+      <form action="/cadastrar" method="POST" enctype="multipart/form-data">
+        <label for="nome">Nome do Espaço:</label>
+        <input type="text" id="nome" name="nome" placeholder="Ex: Arena B12" required>
+      
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Ex: Rua Exemplo, 123" required>
+      
+        <label for="horarios">Horários Disponíveis:</label>
+        <input type="text" id="horarios" name="horarios" placeholder="Ex: 08:00 - 22:00" required>
+      
+        <label for="imagem">Escolher Imagem:</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*" required>
+      
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="4" placeholder="Breve descrição do espaço" required></textarea>
+      
+        <a href="home.html" class="button">Cadastrar Espaço</button>
+      </form>
+    </section>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>

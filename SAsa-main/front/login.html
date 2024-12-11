@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+     <div class="login-container">
+        <h1>Login</h1>
+           <input type="text" id="identidade" placeholder="Usuário ou E-mail" required>
+            <input type="password" id="senha" placeholder="Digite sua senha" required>
+            <button onclick="logar()">Entrar</button><br><br>
+
+        <button onclick="window.location.href='cadastroUsuario.html'">Não tem uma conta? Cadastrar-se!</button>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form onsubmit="event.preventDefault(); logar();">
+            <input type="email" id="identidade" placeholder="E-mail" required><br><br>
+            <input type="password" id="senha" placeholder="Digite sua senha" required><br><br>
+            <button type="submit">Entrar</button><br><br>
+
+            <span id="mensagemErro" style="color: red;"></span>
+        </form><br><br>
+        <button onclick="window.location.href='cadastro.html'">Não tem uma conta? Cadastrar-se!</button>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
